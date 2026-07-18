@@ -97,6 +97,10 @@ InitTestScene*.unity*
 # /Assets/AddressableAssetsData/OSX/addressables_content_state.bin
 /[Aa]ssets/AddressableAssetsData/*/*.bin*
 
+# Character source models are supplied and owned by their individual creators.
+# Keep original model files and their .meta files local; distribute only built Addressables bundles.
+/Assets/Model/MOBACharacter/
+
 # Visual Scripting auto-generated files
 /[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db
 /[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db.meta
