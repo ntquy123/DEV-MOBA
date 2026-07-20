@@ -1,0 +1,16 @@
+# Blender 5.0.1 MTL File: 'None'
+# www.blender.org
+
+newmtl tripo_mat_31fb66fc-bbf5-48e6-bc9c-1c48da526829
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd Den_4_glb_basecolor.JPEG
+map_Ns Den_4_glb_roughness.JPEG
+map_Pr Den_4_glb_roughness.JPEG
+map_refl Den_4_glb_metallic.JPEG
+map_Pm Den_4_glb_metallic.JPEG
+map_Bump -bm 1.000000 Den_4_glb_normal.JPEG
