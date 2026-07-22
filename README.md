@@ -10,3 +10,12 @@ Thư mục `Assets/Model/MOBACharacter/` chỉ dùng để lưu **model nguồn 
 - Repository chỉ lưu code, cấu hình Addressables, prefab/metadata không chứa model nguồn (nếu được phép), và tài liệu kỹ thuật cần thiết để tải bundle.
 
 > Lưu ý: `.gitignore` và Addressables bundle không tự tạo hoặc thay thế quyền tác giả. Trước khi phân phối bundle, vẫn cần bảo đảm người đóng góp có quyền cho phép build, lưu trữ trên server và phân phối asset đó cho người chơi.
+
+## Go server cho Client Unity và Photon Fusion
+
+Thư mục `server/` chứa một máy chủ Go đơn giản cho đăng nhập và ghép trận. Unity có thể gọi API này trước khi kết nối Photon Fusion để xử lý đăng nhập, tìm trận, và chia sẻ `matchId` cho các phiên Fusion.
+
+- Tự động chạy bằng: `cd server && go run main.go`
+- Thử nghiệm APIs: `POST http://localhost:8080/api/login` và `POST http://localhost:8080/api/join-queue`
+- Mẫu client Unity: `Assets/Scripts/GoMatchmakerClient.cs`
+- Server hỗ trợ PostgreSQL thông qua biến môi trường `DATABASE_URL`.
